@@ -11,11 +11,16 @@
   <li>使用HTML、HTML5、CSS、CSS3、JavaScript、jQuery来编写。</li>
   <li>项目整体采用MVC模式划分，使程序最大程度解耦
     <ul>
-      <li>model对两个方块产生的时间间隔根据等级进行规定；<br>
-        对方块的文本内容进行规定；对方块的样式进行规定(需要结合index.css)；<br>
-          此外为生命、等级、现存下落块的list、setInterval函数返回值、分数、剩余生命、失误次数的get和set方法。
+      <li>model对方块生产周期根据等级进行规定；
+        对方块的文本内容进行规定；对方块的样式进行规定(需要结合index.css)；
+        可对对屏幕的可见宽高进行获取；
+       对方块宽高进行规定；
+        此外为生命、等级、现存下落块的list、setInterval函数返回值、分数、剩余生命、失误次数的get和set方法。
       </li>
-      <li></li>
+      <li>controller对各控件进行事件监听；<br>
+          由window的setInterval方法设置周期来产生下落方块；<br>
+          下落方块由CSS3动画编写，利用动画的animation-play-state属性进行下落方块的paused(暂停)和running(下落)控制
+      </li>
       <li></li>
     <ul>
   </li>
