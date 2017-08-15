@@ -1,5 +1,5 @@
 # 打字游戏玩法说明
-<blockquote><a href="https://enka33.github.io/typingGame" target="_blank">来玩打字游戏吧</a></blockquote>
+<a href="https://enka33.github.io/typingGame" target="_blank">来玩打字游戏吧</a>
 <ol>
   <li>通过键盘键入字母来消除下落的方块，键入内容与下落方块内容相匹配，得一分。</li>
   <li>通过"游戏设置"可设置生命和等级，在点击"开始游戏"后可"暂停游戏"和"结束游戏"。</li>
