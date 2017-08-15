@@ -10,40 +10,40 @@ window.onload = function() {
 	
 	$$.$wedgeHtml(pro + ".navHeader", $$.$getHtml("typingGameNav"), {
 		navLeftList : [{
-			name : "ç­‰çº§:",
+			name : "µÈ¼¶:",
 			valueId : "grade",
 			value : "1",
 		},{
-			name : "ç”Ÿå‘½:",
+			name : "ÉúÃü:",
 			valueId : "life",
 			value : "3",
 		},],
 		navRightList : [{
 			className : "divRight15",
 			itemId : "btnSetUpGame",
-			text : "æ¸¸æˆè®¾ç½®",
+			text : "ÓÎÏ·ÉèÖÃ",
 		},{
 			className : "displayNone divRight15",
 			itemId : "btnPauseGame",
-			text : "æš‚åœæ¸¸æˆ",
+			text : "ÔİÍ£ÓÎÏ·",
 		},{
 			className : "displayNone divRight15",
 			itemId : "btnContinueGame",
-			text : "ç»§ç»­æ¸¸æˆ",
+			text : "¼ÌĞøÓÎÏ·",
 		},{
 			className : "divRight5",
 			itemId : "btnStartGame",
-			text : "å¼€å§‹æ¸¸æˆ",
+			text : "¿ªÊ¼ÓÎÏ·",
 		},{
 			className : "displayNone divRight5",
 			itemId : "btnEndGame",
-			text : "ç»“æŸæ¸¸æˆ",
+			text : "½áÊøÓÎÏ·",
 		}],
 	});
 	
 	$$.$wedgeHtml(pro + ".section", $$.$getHtml("selectDiv"), {
 		selectSpanList : [{
-			selectName : "ç­‰çº§é€‰æ‹©",
+			selectName : "µÈ¼¶Ñ¡Ôñ",
 			selectRdioList : [{
 				radioName : "grade",
 				radioId : "grade1",
@@ -58,7 +58,7 @@ window.onload = function() {
 				radioValue : "3&nbsp",
 			},],
 		},{
-			selectName : "ç”Ÿå‘½é€‰æ‹©",
+			selectName : "ÉúÃüÑ¡Ôñ",
 			selectRdioList : [{
 				radioName : "life",
 				radioId : "life3",
@@ -75,27 +75,27 @@ window.onload = function() {
 		},],
 		selectBtnList : [{
 			btnId : "btnConfirm",
-			btnText : "ç¡® å®š",
+			btnText : "È· ¶¨",
 		},{
 			btnId : "btnCancel",
-			btnText : "å– æ¶ˆ",
+			btnText : "È¡ Ïû",
 		},],								
 	});
 	
 	$$.$wedgeHtml(pro + ".footer", $$.$getHtml("typingGameNav"), {
 		navLeftList : [{
-			name : "å¾—åˆ†:",
+			name : "µÃ·Ö:",
 			valueId : "score",
 			value : "0",
 		},{
-			name : "ä½™å‘½:",
+			name : "ÓàÃü:",
 			valueId : "remainLife",
 			value : "3",
 		},],
 		navRightList : [{
 			className : "divRight5 displayNone",
 			itemId : "btnPlayMusic",
-			text : "æ¥ç‚¹éŸ³ä¹",
+			text : "À´µãÒôÀÖ",
 		}],
 	});
 	

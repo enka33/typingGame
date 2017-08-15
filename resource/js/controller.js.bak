@@ -76,7 +76,7 @@
 			$$.$getAction(pro + ".createBlock")(grade, blockModel);	
 			var interval = window.setInterval(function() {
 					$$.$getAction(pro + ".createBlock")(grade, blockModel);
-				}, blockModel.getBlockEquipmentObj()[grade].time);//æ–¹å—äº§ç”Ÿçš„æ—¶é—´é—´éš”
+				}, blockModel.getBlockEquipmentObj()[grade].time);//·½¿é²úÉúµÄÊ±¼ä¼ä¸ô
 			blockModel.setInterval(interval);
 		}
 		
@@ -88,17 +88,17 @@
 			$$.$getIdObj(pro + ".btnEndGame").hide();
 			$$.$getIdObj(pro + ".score").setText(0);
 			$$.$getIdObj(pro + ".remainLife").setText(selectModel.getLife());
-			clearInterval(blockModel.getInterval());//æ§åˆ¶åŠ¨ç”»ä¸‹è½çš„é«˜åº¦
+			clearInterval(blockModel.getInterval());//¿ØÖÆ¶¯»­ÏÂÂäµÄ¸ß¶È
 			var blockList = blockModel.getBlockList();
 			for(var i = 0; i < blockList.length; i++) {
 				$$.$getIdObj(pro + ".section").deleteEle(blockList[i]);
 			}
-			alert("æ¸¸æˆç»“æŸå–½(ï¿£â–½ï¿£)ï¼!\nåˆ†æ•°ï¼š" + blockModel.getScore());
+			alert("ÓÎÏ·½áÊøà¶(£ş¨Œ£ş)£¯!\n·ÖÊı£º" + blockModel.getScore());
 			blockModel.setScore(0);
 		}
 	});
 	
-	$$.$setAction(pro + ".createBlock", function(grade, blockModel) {//äº§ç”Ÿéšæœºå—ï¼Œå¹¶ä¸”è‡ªå¸¦ä¸‹è½åŠ¨ç”»
+	$$.$setAction(pro + ".createBlock", function(grade, blockModel) {//²úÉúËæ»ú¿é£¬²¢ÇÒ×Ô´øÏÂÂä¶¯»­
 		var blockStr = blockModel.getBlockEquipmentObj()[grade].text;
 		var blockClassArr = blockModel.getBlockClassArr();
 		var blockWidth = blockModel.getBlockWidth();
@@ -106,8 +106,8 @@
 		var blockLeft = (blockModel.getClientWidth()- blockWidth)*Math.random();
 		var blockTop = blockModel.getClientHeight()-blockModel.getClientHeight()*0.08 - blockHeight/2;
 		
-		var blockText = blockStr.charAt((blockStr.length - 1)*Math.random());//å­—ç¬¦ä¸²charAt()å‚æ•°é»˜è®¤å‘ä¸‹ï¼ˆå°æ•´æ•°ï¼‰å–æ•´
-		var blockClass = "blockClass grade" + grade + " " + blockClassArr[Math.floor((blockClassArr.length-1)*Math.random())];//ä¸‹è½æ–¹å—çš„åŠ¨ç”»ï¼Œå‡ ç§’è½åœ°ï¼Œå¯åœ¨index.cssä¸­æ ¹æ®ç­‰çº§è®¾ç½®
+		var blockText = blockStr.charAt((blockStr.length - 1)*Math.random());//×Ö·û´®charAt()²ÎÊıÄ¬ÈÏÏòÏÂ£¨Ğ¡ÕûÊı£©È¡Õû
+		var blockClass = "blockClass grade" + grade + " " + blockClassArr[Math.floor((blockClassArr.length-1)*Math.random())];//ÏÂÂä·½¿éµÄ¶¯»­£¬¼¸ÃëÂäµØ£¬¿ÉÔÚindex.cssÖĞ¸ù¾İµÈ¼¶ÉèÖÃ
 		var block = $$.$getIdObj(pro + ".section").createBlock();
 		block.innerText = blockText;
 		block.className = blockClass;
@@ -126,7 +126,7 @@
         return false;
     };
     if($(block).exist()) {
-    	block.addEventListener("webkitAnimationEnd", function(){ //åŠ¨ç”»ç»“æŸæ—¶äº‹ä»¶ 
+    	block.addEventListener("webkitAnimationEnd", function(){ //¶¯»­½áÊøÊ±ÊÂ¼ş 
 				console.log("end::", this.innerText);
 				blockModel.removeEleInBlockListByText(this.innerText);
 				var remainLife = blockModel.getRemainLife();
@@ -148,7 +148,7 @@
 	
 	$$.$setAction(pro + ".typingGaming", function(blockModel) {
 		document.onkeypress = function(e) {
-			var remainLife = blockModel.getRemainLife();//å¿…é¡»è¦å†™åˆ°é”®ç›˜ç›‘å¬äº‹ä»¶å†…éƒ¨
+			var remainLife = blockModel.getRemainLife();//±ØĞëÒªĞ´µ½¼üÅÌ¼àÌıÊÂ¼şÄÚ²¿
 			var fault = blockModel.getFault();
 			if(!($($$.$getId(pro, "btnPauseGame")).hasClass("displayNone") ||
 				$($$.$getId(pro, "btnEndGame")).hasClass("displayNone"))) {
