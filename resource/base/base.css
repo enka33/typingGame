@@ -1,0 +1,29 @@
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	Font-size: 62.5%;
+}
+
+header, footer {
+	position:relative;
+	width: 100%;
+	height: 8%;
+  background: #E8E7E3;
+  z-index:2;
+  font-size: 1em;
+}
+
+section {
+	width: 100%;
+	height: 84%;
+}
+
+.displayNone {
+	display: none;
+}
+

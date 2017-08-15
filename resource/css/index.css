@@ -1,0 +1,176 @@
+header div, footer div {
+	height: 100%;
+	line-height: 230%;
+	color: #777777;
+	font-size: 2em;
+	display: inline-block;
+}
+
+footer div {
+	font-size: 1.5em;
+	line-height: 350%;
+}
+
+.textRight {
+	width: 8%;
+	text-align: right;
+}
+
+.divPosition {
+	position: absolute;
+	width: 10%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.divRight15 {
+	right: 15%;
+}
+
+.divRight5 {
+	right: 5%;
+}
+
+.divPosition:hover {
+	color: black;
+}
+
+.width50 {
+	width: 2%;
+	text-align: right;
+}
+
+button {
+	background: #418BCA;
+	border: 1px solid #2F7ABB;
+	border-radius:0.5em;
+	color: #FFFFFF;
+	width: 60px;
+	height: 25px;
+}
+
+button:hover {
+	background: #337AB7;
+}
+
+#divSetUpGame {
+	background: #404040;
+	color: #FFFFFF;
+	position: absolute;
+	right: 10.5%;
+	height: 100px;
+	width: 200px;
+	border-radius: 5px;
+	-webkit-box-shadow:0 0 5px #616161;  
+  -moz-box-shadow:0 0 5px #616161;  
+  box-shadow:0 0 5px #616161;  
+  font-size: 1.6em;
+  transition:width 2s;
+}
+
+.spanSelect {
+	display: inline-block;
+	height: 30px;
+	width: 200px;
+	text-align: center;
+	margin-top: 3px;
+}
+
+.blockClass {
+	position: absolute;
+	text-align: center;
+	line-height: 40px;
+	font-size: 22px;
+	width: 45px;
+	height: 45px;
+	top: 7px;
+	left: 100px;
+}
+
+.blockClass1 {
+	border:1px solid #96c2f1;
+	background:#eff7ff;
+	color: black;
+}
+
+.blockClass2 {
+	border: 1px solid #FFFF99;
+	background: #99CC99;
+	color: #666600;
+}
+
+.blockClass3 {
+	border: 1px solid #99CC66;
+	background: #996633;
+	color: #FFFF99;
+}
+
+.blockClass4 {
+	border: 1px solid #CCFFCC;
+	background: #CCCC66;
+	color: #666600;
+}
+
+.blockClass5 {
+	border: 1px solid #669933;
+	background: #CCCC33;
+	color: #663300;
+}
+
+.blockClass6 {
+	border: 1px solid #999933;
+	background: #CC9966;
+	color: #666633;
+}
+
+.blockClass7 {
+	border: 1px solid #663300;
+	background: #CCCC66;
+	color: #006633;
+}
+
+.blockClass8 {
+	border: 1px solid #FFFFCC;
+	background: #999999;
+	color: #666600;
+}
+
+.blockClass9 {
+	border: 1px solid #333300;
+	background: #006633;
+	color: #CCCC99;
+}
+
+.grade1 {
+	animation:fallBolck 10s;
+	-webkit-animation:fallBolck 10s; /* Safari and Chrome */
+	animation-timing-function:linear;/*使动画匀速移动*/
+	animation-fill-mode: forwards;/*使动画停在最后一帧的位置*/
+}
+
+.grade2 {
+	animation:fallBolck 7s;
+	-webkit-animation:fallBolck 7s; /* Safari and Chrome */
+	animation-timing-function:linear;/*使动画匀速移动*/
+	animation-fill-mode: forwards;/*使动画停在最后一帧的位置*/
+}
+
+.grade3 {
+	animation:fallBolck 5s;
+	-webkit-animation:fallBolck 5s; /* Safari and Chrome */
+	animation-timing-function:linear;/*使动画匀速移动*/
+	animation-fill-mode: forwards;/*使动画停在最后一帧的位置*/
+}
+
+/*@keyframes fallBolck
+{
+	0%   {-webkit-transform:translateX(0px);}
+	100% {top:560px;}
+}*/
+
+@-webkit-keyframes fallBolck /* Safari and Chrome */
+{
+	0%   {-webkit-transform:translateY(0px);}
+	100% {}
+}
+
